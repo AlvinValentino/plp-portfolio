@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_port_folio/component.dart';
 
 class HomeMobile extends StatefulWidget {
   const HomeMobile({super.key});
@@ -21,7 +22,7 @@ class _HomeMobileState extends State<HomeMobile> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("title"),
+        title: NavBar(),
       ),
       body: Center(
         child: Column(
