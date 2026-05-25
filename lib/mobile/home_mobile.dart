@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_port_folio/component.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeMobile extends StatefulWidget {
   const HomeMobile({super.key});
@@ -9,14 +10,6 @@ class HomeMobile extends StatefulWidget {
 }
 
 class _HomeMobileState extends State<HomeMobile> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,19 +21,34 @@ class _HomeMobileState extends State<HomeMobile> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('You have pushed the button this many times:'),
+            const CircleAvatar(
+              radius: 80,
+              backgroundImage: AssetImage("ggs.png"),
+            ),
+            const SizedBox(height: 20),
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              "Alvin Valentino",
+              style: GoogleFonts.vastShadow(fontSize: 24),
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              "NIM: 23110002",
+              style: GoogleFonts.vastShadow(fontSize: 18),
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              "Prodi: Sistem dan Teknologi Informasi",
+              style: GoogleFonts.vastShadow(fontSize: 18),
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              "Kelas: STI-B",
+              style: GoogleFonts.vastShadow(fontSize: 18),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
