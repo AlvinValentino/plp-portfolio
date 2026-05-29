@@ -49,7 +49,6 @@ class HomeWeb extends StatelessWidget {
               clipBehavior: Clip.none,
               alignment: Alignment.center,
               children: [
-                // banner gradasi
                 Container(
                   height: 120,
                   width: double.infinity,
@@ -65,7 +64,6 @@ class HomeWeb extends StatelessWidget {
                     ),
                   ),
                 ),
-                // avatar inisial
                 Positioned(
                   bottom: 0,
                   child: Container(
@@ -104,7 +102,6 @@ class HomeWeb extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 4),
- 
           Container(
             margin: const EdgeInsets.only(top: 2),
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 5),
